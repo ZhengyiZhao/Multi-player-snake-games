@@ -1,0 +1,7 @@
+gcc -c kbhit.c
+gcc -c linklist.c
+gcc -c TcpUdp.c
+gcc -c timersnake2.c
+gcc -c SnkComm.c
+gcc -c snktimer.c
+gcc -o SnakeServer snktimer.o timersnake2.o SnkComm.o TcpUdp.o linklist.o kbhit.o -lpthread
